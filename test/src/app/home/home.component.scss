@@ -1,0 +1,36 @@
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(80px, auto);
+}
+
+.one {
+    background-color: rgb(69, 118, 153);
+    text-align: center;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: minmax(50px, auto);
+}
+  
+.two {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.three{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.four{
+    grid-column: 2;
+    grid-row: 2;
+    text-align: justify;
+}
+
+
+  

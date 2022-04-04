@@ -1,0 +1,36 @@
+<div class="wrapper">
+  <div class="one">
+    <h1> Tu vuelo .com </h1>
+  </div>
+</div>
+<div class="body">
+  <div class="two">
+    <form  #myForm="ngForm">
+      <div class="input-group">
+        <label for="user">Usuario </label>
+        <input type="text" name="user" required id="user" [(ngModel)]="register.user" />
+        <p></p>
+      </div>
+      <div class="input-group">
+        <label for="password">Contraseña </label>
+        <input type="password" name="email" required id="password" [(ngModel)]="register.password" />
+        <p></p>
+      </div>
+     
+      <button [routerLink]="['/', 'post', 'loggerIn.id']" [disabled]="validateLogin()==false"  type="submit">Enviar</button>
+    </form>
+  </div>
+  <div class="three">
+      <img width="650" height="350" src="./assets/homeImg.jpg">
+  </div>
+
+  <div class="four">
+   <p> En "Tu vuelo.com" podras encontrar y registrar tus mejores opciones de vuelo a todo destino.
+       Registrate en nuestra plataforma para conocer informacion de los vuelos, sus precios, fechas,
+       clases, y demas información que te sea relevante. <br> Ademas de esto una vez tengas tu cuenta creada
+       podras elegir el vuelo de tu preferencia, tener un registo de estos y acomodarlo de la mejor manera.
+       <br> Te esperamos!.
+   </p>
+</div>
+
+</div>
